@@ -1,4 +1,4 @@
-from prime import isPrime
+from Prime import isPrime
 import time
 
 def test_small_0():
@@ -11,6 +11,13 @@ def test_small_negative():
     assert isPrime(-7) == False
 
 def test_small_21():
-    time.sleep(2)
     assert isPrime(21) == False
+
+def test_small_big():
+    assert isPrime(87178291199) == True
+
+def test_small_big_false():
+    assert isPrime(87178291197) == False
+
+
 
